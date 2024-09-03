@@ -9,10 +9,10 @@
 <body>
     <header>
         <h1>Cárdápio Digital</h1>
-        <button id="toggle-mode">Modo Escuro</button>
         <div class="btn-container">
-            <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+            <button id="toggle-mode">Modo Escuro</button>
+            <button name="increase-font" id="increase-font" class="font" title="Aumentar fonte">A +</button>
+            <button name="decrease-font" id="decrease-font" class="font" title="Diminuir fonte">A -</button>
         </div>
     </header>
     <section class="banner">
@@ -43,7 +43,108 @@
                 <h3>Borcelle</h3>
                 <p>Assis - SP</p>
             </div>
-            <!-- Mais carros podem ser adicionados aqui -->
+            <div class="partner">
+                <div class="partner-logo">
+                    <img src="img/logo4.svg" alt="Logo da Borcelle - Cachorro quente">
+                </div>
+                <h3>Borcelle Hot Dog</h3>
+                <p>Ourinhos - SP</p>
+            </div>
+            <div class="partner">
+                <div class="partner-logo">
+                    <img src="img/logo5.svg" alt="Logo da Borcelle - Açaí">
+                </div>
+                <h3>Borcelle Açaí</h3>
+                <p>Ibirarema - SP</p>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section class="testimonials">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial-list">
+                <div class="testimonial">
+                    <p>"O sistema de cardápio digital foi um divisor de águas para nosso restaurante. É fácil de usar e nossos clientes adoram a atualização em tempo real!"</p>
+                    <h4>Maria Oliveira, Borcelle Açaí</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Com o Cárdápio Digital, conseguimos reduzir o desperdício e manter nossos clientes informados sobre novos itens. Recomendo a todos!"</p>
+                    <h4>João Pereira, Churrascaria Faustino</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelente ferramenta! O suporte é ótimo e a integração com nosso sistema de pedidos foi tranquila. Agradecemos pelo ótimo serviço!"</p>
+                    <h4>Fernanda Silva, Burger Hoouse</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Recursos -->
+        <section class="features">
+            <h2>Recursos Principais</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h3>Fácil Navegação</h3>
+                    <p>Nosso sistema oferece uma navegação intuitiva e fácil de usar, tornando a criação e a visualização do cardápio um processo simples.</p>
+                </div>
+                <div class="feature">
+                    <h3>Atualizações em Tempo Real</h3>
+                    <p>Atualize seu cardápio em tempo real e mantenha seus clientes sempre informados sobre as últimas ofertas e itens disponíveis.</p>
+                </div>
+                <div class="feature">
+                    <h3>Design Personalizável</h3>
+                    <p>Personalize o visual do seu cardápio com diversas opções de design e cores para combinar com a identidade da sua marca.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela de Planos -->
+        <section class="plans">
+            <h2>Planos Disponíveis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bronze</td>
+                        <td>Plano básico com funcionalidades essenciais</td>
+                        <td>R$ 29,90/mês</td>
+                    </tr>
+                    <tr>
+                        <td>Prata</td>
+                        <td>Plano intermediário com funcionalidades adicionais</td>
+                        <td>R$ 49,90/mês</td>
+                    </tr>
+                    <tr>
+                        <td>Ouro</td>
+                        <td>Plano completo com todas as funcionalidades</td>
+                        <td>R$ 89,90/mês</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato para poder fazer a sua cotação!</p>
+            <div class="contactContainer">
+                <form>
+                    <label for="name" class="label">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite o seu nome" />
+                    <label for="email" class="label">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com" />
+                    <div class="choose">
+                        <input type="radio" name="plan" class="choosePlan" id="cooper" placeholder="Bronze"><label for="cooper"> Bronze</label>
+                        <input type="radio" name="plan" class="choosePlan" id="silver" placeholder="Prata"><label for="silver"> Prata</label>
+                        <input type="radio" name="plan" class="choosePlan" id="gold" placeholder="Ouro"><label for="gold"> Ouro</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
