@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Carros</title>
+    <title>Cárdápio Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Loja de Carros</h1>
+        <h1>Cárdápio Digital</h1>
         <button id="toggle-mode">Modo Escuro</button>
+        <div class="btn-container">
+            <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+        </div>
     </header>
+    <section class="banner">
+        <img src="img/banner.svg" alt="Banner falando sobre o sistema de entrega" class="banner">
+    </section>
     <main>
-        <section class="car-list">
-            <h2>Nossos Carros</h2>
+        <h2>Nossos Parceiros</h2>
+        <section class="partner-list">
             <!-- Adicione os carros aqui -->
-            <div class="car">
-                <h3>Carro 1</h3>
-                <p>Descrição do Carro 1</p>
+            <div class="partner">
+                <div class="partner-logo">
+                    <img src="img/logo1.svg" alt="Logo da Burger House">
+                </div>
+                <h3>Burger House</h3>
+                <p>Palmital - SP</p>
             </div>
-            <div class="car">
-                <h3>Carro 2</h3>
-                <p>Descrição do Carro 2</p>
+            <div class="partner">
+                <div class="partner-logo">
+                    <img src="img/logo2.svg" alt="Logo da Churrascaria Faustino">
+                </div>
+                <h3>Churrascaria Faustino</h3>
+                <p>Ibirarema - SP</p>
+            </div>
+            <div class="partner">
+                <div class="partner-logo">
+                    <img src="img/logo3.svg" alt="Logo da Borcelle">
+                </div>
+                <h3>Borcelle</h3>
+                <p>Assis - SP</p>
             </div>
             <!-- Mais carros podem ser adicionados aqui -->
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Loja de Carros. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Cárdapio Digital. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>
